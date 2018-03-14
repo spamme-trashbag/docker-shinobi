@@ -1,4 +1,5 @@
-FROM mhart/alpine-node:8
+# use node 9
+FROM mhart/alpine-node
 
 WORKDIR /opt/shinobi
 
