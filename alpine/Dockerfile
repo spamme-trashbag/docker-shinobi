@@ -18,6 +18,7 @@ RUN npm i -g npm@5.6.0
 RUN npm install
     
 VOLUME ["/opt/shinobi/videos"]
+VOLUME ["/opt/dbdata"]
 
 EXPOSE 8080
 ENTRYPOINT ["/opt/shinobi/docker-entrypoint.sh" ]
