@@ -14,6 +14,7 @@ COPY docker-entrypoint.sh .
 RUN chmod -f +x ./*.sh
 
 # Install NodeJS dependencies
+RUN npm i -g npm@5.6.0
 RUN npm install
     
 VOLUME ["/opt/shinobi/videos"]
